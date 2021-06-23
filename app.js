@@ -25,7 +25,11 @@ const multiplicacion = (a,b)=>{
     return suma(a,multiplicacion(a,resta(b,1)));
   }
 }
-//
+//suma(2,multiplicacion(2,resta(2,1))
+//suma(2,multiplicacion(2,resta(1-1))
+//suma(2,multiplicacion(2,0))
+//suma(2,suma(2,0))
+//suma 2,2 = >4
 function multiplica(c, d) {
   return c > 0 ? suma(multiplica(resta(c,1), d),d) : 0;
 }
